@@ -6,6 +6,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Test Sample](#test-sample)
+- [Demo](#demo)
 - [Credits](#credits)
 - [License](#license)
 
@@ -15,6 +16,8 @@
 
 ## Usage
 
+## Demo
+
 ### Test Sample
 
 ### Credits
@@ -22,6 +25,3 @@
 ### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
-1st merge

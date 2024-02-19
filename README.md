@@ -45,3 +45,13 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 >>>>>>>>> Temporary merge branch 2
+
+## Questions
+If you have any addition questions feel free to reach us at either the github repository or our email addresses.
+- [Intensity GitHub Repo](https://github.com/tishaanderson/Intensity)
+- [Allex](allex.ortiz@outlook.com)
+- [Andrea](agon0015@gmail.com)
+- [Luis](l.gonzalez6@me.com)
+- [Victor](victorsamuel196@gmail.com)
+- [Tisha](anderson.tisha23@gmail.com)
+

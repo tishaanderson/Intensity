@@ -21,5 +21,9 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
 *.sw?
 /src/output.css
+=======
+*.sw?
+>>>>>>> f6f0a72b9e6bc0b5707cab5e011fa0d85e1c4dbb

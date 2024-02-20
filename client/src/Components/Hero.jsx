@@ -1,6 +1,6 @@
 import React from 'react'
-import './Hero.css'
-import Header from '../Header/Header'
+import '../styles/Hero.css'
+import Header from './Header'
 
 const Hero = () => {
   return (

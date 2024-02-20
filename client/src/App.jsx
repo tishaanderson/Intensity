@@ -2,7 +2,7 @@
 // import { Outlet } from 'react-router-dom';
 
 import './index.css'
-import Hero from './components/Hero/Hero'
+import Hero from './components/Hero'
 
 // const client = new ApolloClient({
 //   uri: 'graphql',

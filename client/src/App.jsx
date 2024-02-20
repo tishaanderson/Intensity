@@ -1,22 +1,22 @@
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { Outlet } from 'react-router-dom';
+// import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+// import { Outlet } from 'react-router-dom';
 
 import './index.css'
 import Hero from './components/Hero/Hero'
 
-const client = new ApolloClient({
-  uri: 'graphql',
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   uri: 'graphql',
+//   cache: new InMemoryCache(),
+// });
 
 function App() {
 
   return (
-    <ApolloProvider client={client}>
+    // <ApolloProvider client={client}>
       <div className="App">
         <Hero />
       </div>
-    </ApolloProvider>
+    // </ApolloProvider>
   )
 }
 

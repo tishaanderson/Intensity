@@ -43,8 +43,13 @@ const resolvers = {
       return { token, user}
     },
 
-    login: {
-
+    login: async (_, {username, password}) => {
+      const user = await User.findOne({username});
+      if (!user){throw AuthenticationError};
+      const correctPassword = await user.isCorrectPassword(password);
+      if (!correctPassword){throw AuthenticationError};
+      const token = signToken(user);
+      return { token, user};
     },
 
     createWorkout: async (_, { name, exerciseIds }) => {

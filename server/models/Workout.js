@@ -18,6 +18,6 @@ const workoutSchema = new Schema(
     }
 );
 
-const Workouts = model('Workouts', workoutSchema);
+const Workouts = model('Workout', workoutSchema);
 
 module.exports = Workouts;

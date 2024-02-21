@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const userSchema =  new Schema({
     username:  {
@@ -16,14 +17,14 @@ const userSchema =  new Schema({
       type: String,
       required: true,
       },
-    workout:  {
+    workout: [{
       type: Schema.Types.ObjectId,
-      ref: 'Workouts'
-    },
-    exercise:  {
+      ref: 'Workout'
+    }],
+    exercise:  [{
       type: Schema.Types.ObjectId,
       ref: 'Exercise'
-    }
+    }]
 });
 
 // hash user password

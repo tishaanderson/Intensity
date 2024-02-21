@@ -1,5 +1,4 @@
-const Workout = require('./models/Workout');
-const Exercise = require('./models/Exercise');
+const { Workout, Exercise} = require('../models');
 
 const resolvers = {
   Query: {

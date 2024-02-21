@@ -45,8 +45,8 @@ const Hero = () => {
         </div>
         {/* Hero Buttons */}
         <div className="hero-buttons">
-          <buttons className="btn"></buttons>
-          <buttons className="btn"></buttons>
+          <buttons className="btn">Get Started</buttons>
+          <buttons className="btn">Learn More</buttons>
         </div>
       </div>
       <div className="right-h">right Side</div>

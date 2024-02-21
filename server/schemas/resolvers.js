@@ -1,4 +1,5 @@
-const { Workout, Exercise} = require('../models');
+const { Workout, Exercise, User} = require('../models');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
@@ -36,6 +37,21 @@ const resolvers = {
     },
   },
   Mutation: {
+    addUser: async (_, {username, email, password}) => {
+      const user = await User.create({username, email, password})
+      const token = signToken({username, email, _id: user._id})
+      return { token, user}
+    },
+
+    login: async (_, {username, password}) => {
+      const user = await User.findOne({username});
+      if (!user){throw AuthenticationError};
+      const correctPassword = await user.isCorrectPassword(password);
+      if (!correctPassword){throw AuthenticationError};
+      const token = signToken(user);
+      return { token, user};
+    },
+
     createWorkout: async (_, { name, exerciseIds }) => {
       const workout = new Workout({
         name,

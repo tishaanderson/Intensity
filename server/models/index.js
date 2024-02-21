@@ -4,4 +4,4 @@ const User = require('./User');
 
 // const Instructor = require('./Instructor')
 
-module.exports = { Workout, Exercise };
+module.exports = { Workout, Exercise, User };

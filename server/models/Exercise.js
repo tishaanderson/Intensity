@@ -17,7 +17,12 @@ const exerciseSchema =  new Schema({
     duration_minutes:  {
         type: Number,
         required: false
-      }
+      },
+      workout_type: [{
+        type: Schema.Types.ObjectId,
+         ref: 'Workout'
+      }]
+
 });
 
 const Exercise = model('Exercise', exerciseSchema);

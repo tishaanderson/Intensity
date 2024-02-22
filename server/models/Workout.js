@@ -11,6 +11,11 @@ const workoutSchema = new Schema(
         //     type: Schema.Types.ObjectId,
         //     ref: 'Instructor'
         // },
+        // workout_type:{
+        //     type: String,
+        //     required: true,
+        //     unique: true,
+        // },
         exercise: [{
             type: Schema.Types.ObjectId,
             ref: 'Excercise'

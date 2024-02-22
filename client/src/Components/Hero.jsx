@@ -9,8 +9,9 @@ import Calories from '../assets/icons/calories.png'
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="left-h">
+    
+     <div className="hero">
+       <div className="left-h">
         <Header/>
 {/* the best ad */}
         <div className="the-best-ad">
@@ -55,6 +56,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="right-h">
+        {/* make link from react router dom to login page */}
         <button className='btn'>Join Now</button>
 
 
@@ -76,7 +78,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+   </div>
   )
 }
 

@@ -5,7 +5,7 @@ const Plans = () => {
   return (
     <div className='h-screen'>
       <PageHeader />
-      Plan Prices???
+      {/* Plan Prices??? */}
     </div>
   )
 }

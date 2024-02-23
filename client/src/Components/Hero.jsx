@@ -9,11 +9,11 @@ import Calories from '../assets/icons/calories.png'
 
 const Hero = () => {
   return (
-    
-     <div className="hero">
-       <div className="left-h">
-        <Header/>
-{/* the best ad */}
+
+    <div className="hero">
+      <div className="left-h">
+        <Header />
+        {/* the best ad */}
         <div className="the-best-ad">
           <div></div>
           <span>The Best Intense Fitness Club Nationwide</span>
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
           <div>
             <span>
-            We aim to help you achieve tour ideal body
+              We aim to help you achieve tour ideal body
             </span>
           </div>
         </div>
@@ -57,7 +57,13 @@ const Hero = () => {
       </div>
       <div className="right-h">
         {/* make link from react router dom to login page */}
-        <button className='btn'>Join Now</button>
+        <button className='btn'><a href="./pages/JoinIn" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Join In</a>
+
+
+
+
+
+</button>
 
 
         <div className="heart-rate">
@@ -78,7 +84,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-   </div>
+    </div>
   )
 }
 

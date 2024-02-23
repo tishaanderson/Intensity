@@ -10,11 +10,12 @@ import App from './App.jsx';
 // import Profile from './pages/Profile';
 import Hero from './components/Hero.jsx'
 
-import Home from './pages/Home';
-import Workouts from './pages/Workouts.jsx'
-import WhyUs from './pages/WhyUs.jsx'
-import Plans from './Pages/Plans.jsx'
-import Error from './pages/Error';
+import Home from './pages/Home.jsx';
+import Workouts from './pages/Workouts.jsx';
+import WhyUs from './pages/WhyUs.jsx';
+import Plans from './pages/Plans.jsx';
+import JoinIn from './pages/JoinIn.jsx';
+import Error from './pages/Error.jsx';
 import ExerciseDetail from './pages/ExerciseDetail.jsx';
 
 const router = createBrowserRouter([
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: '/plans',
         element: <Plans />
+      },
+      {
+        path: '/join-in',
+        element: <JoinIn />
       },
       // {
       //   path: '/login',

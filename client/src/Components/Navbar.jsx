@@ -1,10 +1,17 @@
 import React from 'react';
 // import Logo from '../assets/images/Placeholder.jpg';
-// import Link from 'react-scroll';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <ul className='header-menu'>
+      <li>
+        <Link to='/'>Home</Link>
+      </li>
+      <li><Link to='/workouts'>Workouts</Link></li>
+      <li><Link to='/why-us'>Why Us</Link></li>
+      <li><Link to='/plans'>Plans</Link></li>
+    </ul>
   )
 }
 

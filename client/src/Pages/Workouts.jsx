@@ -1,13 +1,13 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
 
-const Home = () => {
+const Workouts = () => {
   return (
     <div className='h-screen'>
       <PageHeader />
-      Home
+      Workouts
     </div>
   )
 }
 
-export default Home
+export default Workouts

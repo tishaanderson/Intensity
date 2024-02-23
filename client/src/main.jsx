@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <Hero />
       }, 
       {
-        path: '/home',
+        path: '/',
         element: <Home />
       },
       {

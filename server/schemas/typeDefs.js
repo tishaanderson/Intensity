@@ -3,6 +3,7 @@ const typeDefs = `
     _id: ID
     name: String
     exercises: [Exercise]
+  
   }
 
   type Exercise {
@@ -11,6 +12,7 @@ const typeDefs = `
     sets: Int
     reps: Int
     duration_minutes: Int
+    workout_type: [Workout]
   }
 
   type User {

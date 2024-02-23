@@ -1,0 +1,174 @@
+[
+    {
+      "name": "Bench Press",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Dumbbell Incline Press",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Chest Cable Flys",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Push Ups",
+      "sets": 3,
+      "reps": 15
+    },
+    {
+      "name": "Chest Dips",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Body Squats",
+      "sets": 3,
+      "reps": 15
+    },
+    {
+      "name": "Weighted Squats",
+      "sets": 4,
+      "reps": 8
+    },
+    {
+      "name": "Leg Press",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Leg Extensions",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Lunges",
+      "sets": 3,
+      "reps": 10,
+      "duration_minutes": 2
+    },
+    {
+      "name": "Plank",
+      "duration_minutes": 2
+    },
+    {
+      "name": "Crunches",
+      "sets": 3,
+      "reps": 20
+    },
+    {
+      "name": "Russian Twist",
+      "sets": 3,
+      "reps": 15,
+      "duration_minutes": 2
+    },
+    {
+      "name": "Pull Up Bar Knees to Tummy",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Side Dumbbell Crunches",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Back Cable Row",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Lat Pulldown",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Bent Over Dumbbell Row",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Assisted Pull or Body Weight",
+      "sets": 3,
+      "reps": 8
+    },
+    {
+      "name": "Back Bend Over Rows",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Hammer Dumbbell Curls",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Triceps Cable Extension",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Skull Crushers (Tris)",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Barbell Bicep Curl",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Shoulder Raises Single or Together",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Shoulder Press Dumbbell",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Shoulder Cable Extension",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Shoulder Cable Crossover",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Shoulder Rotation Rehab/Recovery",
+      "duration_minutes": 5
+    },
+    {
+      "name": "Stair Master",
+      "duration_minutes": 20
+    },
+    {
+      "name": "Jump Rope",
+      "duration_minutes": 15
+    },
+    {
+      "name": "Suicide Drills",
+      "duration_minutes": 10
+    },
+    {
+      "name": "Treadmills",
+      "duration_minutes": 30
+    },
+    {
+      "name": "Biking",
+      "duration_minutes": 45
+    },
+    {
+      "name": "Swimming",
+      "duration_minutes": 45
+    }
+  ]
+  
+  
+  

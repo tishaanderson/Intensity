@@ -5,7 +5,7 @@ const resolvers = {
   Query: {
     bodyTypes: async () => {
       try {
-        const bodyTypes = await BodyTypes.find();
+        const bodyTypes = await BodyType.find();
         return bodyTypes;
       } catch (err) {
         throw new Error(err);

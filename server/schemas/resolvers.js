@@ -1,20 +1,20 @@
-const { Workout, Exercise, User} = require('../models');
+const { BodyType, Exercise, User} = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
-    workouts: async () => {
+    bodyTypes: async () => {
       try {
-        const workouts = await Workout.find();
-        return workouts;
+        const bodyTypes = await BodyTypes.find();
+        return bodyTypes;
       } catch (err) {
         throw new Error(err);
       }
     },
-    workout: async (_, { id }) => {
+    bodyType: async (_, { id }) => {
       try {
-        const workout = await Workout.findById(id);
-        return workout;
+        const bodyType = await BodyType.findById(id);
+        return bodyType;
       } catch (err) {
         throw new Error(err);
       }
@@ -52,13 +52,13 @@ const resolvers = {
       return { token, user};
     },
 
-    createWorkout: async (_, { name, exerciseIds }) => {
-      const workout = new Workout({
+    createBodyType: async (_, { name, exerciseIds }) => {
+      const bodyType = new BodyType({
         name,
         exercises: exerciseIds
       });
       try {
-        const result = await workout.save();
+        const result = await bodyType.save();
         return result;
       } catch (err) {
         throw new Error(err);

@@ -18,9 +18,9 @@ const exerciseSchema =  new Schema({
         type: Number,
         required: false
       },
-      workout_type: [{
+      body_type: [{
         type: Schema.Types.ObjectId,
-         ref: 'Workout'
+         ref: 'BodyType'
       }]
 
 });

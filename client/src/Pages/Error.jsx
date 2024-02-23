@@ -1,11 +1,11 @@
 import React from 'react'
-import PageHeader from '../components/PageHeader'
+import PageNavbar from '../components/PageNavbar'
 
 
 const Error = () => {
   return (
     <div>
-      <PageHeader />
+      <PageNavbar />
       Error
     </div>
   )

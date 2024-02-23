@@ -17,9 +17,9 @@ const userSchema =  new Schema({
       type: String,
       required: true,
       },
-    workout: [{
+    body_type: [{
       type: Schema.Types.ObjectId,
-      ref: 'Workout'
+      ref: 'BodyType'
     }],
     exercise:  [{
       type: Schema.Types.ObjectId,

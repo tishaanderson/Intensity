@@ -1,10 +1,10 @@
 import React from 'react'
-import PageHeader from '../components/PageHeader'
+import PageNavbar from '../components/PageNavbar'
 
 const Plans = () => {
   return (
     <div className='h-screen'>
-      <PageHeader />
+      <PageNavbar />
       Plan Prices???
     </div>
   )

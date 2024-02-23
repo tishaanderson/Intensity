@@ -1,8 +1,12 @@
 import React from 'react'
+import PageNavbar from '../components/PageNavbar'
 
 const ExerciseDetail = () => {
   return (
-    <div>ExerciseDetail</div>
+    <div>
+      <PageNavbar />
+      ExerciseDetail
+    </div>
   )
 }
 

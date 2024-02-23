@@ -1,10 +1,10 @@
 import React from 'react'
-import PageHeader from '../components/PageHeader'
+import PageNavbar from '../components/PageNavbar'
 
 const Home = () => {
   return (
     <div className='h-screen'>
-      <PageHeader />
+      <PageNavbar />
       Home
     </div>
   )

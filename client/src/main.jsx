@@ -11,9 +11,9 @@ import App from './App.jsx';
 import Hero from './components/Hero.jsx'
 
 import Home from './pages/Home';
-import Workouts from './pages/Workouts.jsx'
-import WhyUs from './pages/WhyUs.jsx'
-import Plans from './pages/Plans.jsx'
+import Workouts from './pages/Workouts.jsx';
+import WhyUs from './pages/WhyUs.jsx';
+import Plans from './pages/Plans.jsx';
 import Error from './pages/Error';
 import ExerciseDetail from './pages/ExerciseDetail.jsx';
 

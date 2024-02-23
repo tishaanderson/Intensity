@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/PageHeader.css'
+import '../styles/PageNavbar.css'
 import Logo from '../assets/images/Logo.png'
 import {Link} from 'react-router-dom';
 
 
-const PageHeader = () => {
+const PageNavbar = () => {
   return (
-    <div className="pageHeader">
+    <div className="pageNavbar">
 
         <img src={Logo} alt="" className='logo' />
 
@@ -22,4 +22,4 @@ const PageHeader = () => {
   )
 }
 
-export default PageHeader
+export default PageNavbar

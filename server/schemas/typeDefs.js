@@ -1,5 +1,5 @@
 const typeDefs = `
-  type Workout{
+  type BodyType{
     _id: ID
     name: String
     exercises: [Exercise]
@@ -12,7 +12,7 @@ const typeDefs = `
     sets: Int
     reps: Int
     duration_minutes: Int
-    workout_type: [Workout]
+    body_type: [BodyType]
   }
 
   type User {
@@ -20,7 +20,7 @@ const typeDefs = `
     username: String
     email: String
     password: String
-    workout: [Workout]
+    body_type: [BodyType]
     exercises: [Exercise]
   }
 
@@ -30,8 +30,8 @@ const typeDefs = `
   }
 
   type Query {
-    workouts: [Workout]
-    workout(id: ID!): Workout
+    body_type: [BodyType]
+    body_type(id: ID!): BodyType
     exercises: [Exercise]
     exercise(id: ID!): Exercise
     user: User
@@ -39,7 +39,7 @@ const typeDefs = `
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
-    createWorkout(name: String!, exerciseIds: [ID!]!): Workout
+    createBodyType(name: String!, exerciseIds: [ID!]!): BodyType
     createExercise(name: String!, sets: Int!, reps: Int!, duration_minutes: Int): Exercise
     login(username: String!, password: String!): Auth
   }

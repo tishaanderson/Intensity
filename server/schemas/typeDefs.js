@@ -1,4 +1,4 @@
-typeDefs
+
 
 const typeDefs = `
   type Workout{

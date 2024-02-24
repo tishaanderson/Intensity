@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         element: <Plans />
       },
       {
-        path: '/join-in',
+        path: '/pages/Joinin',
         element: <JoinIn />
       },
       // {

@@ -1,4 +1,4 @@
-resolvers
+
 
 const { Workout, Exercise, User} = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');

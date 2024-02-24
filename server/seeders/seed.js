@@ -1,13 +1,16 @@
+seed.js
+
 const db = require('../config/connection');
 const { User, Exercise, Workout } = require('../models');
-const exerciseSeeds = require('./exerciseSeeds.json');
+const userSeeds = require('./userSeeds.json');
 const workoutSeeds = require('./workoutSeeds.json');
 const cleanDB = require('./cleanDB');
 db.once('open', async () => {
   try {
     await cleanDB('Workout', 'workouts');
     await cleanDB('Exercise', 'exercises');
-    await User.create(exerciseSeeds);
+    await cleanDB('User', 'users');
+    await User.create(userSeeds);
     for (let i = 0; i < workoutSeeds.length; i++) {
       const { _id, workout } = await Workout.create(workoutSeeds[i]);
       const user = await Exercise.findOneAndUpdate(
@@ -26,10 +29,3 @@ db.once('open', async () => {
   console.log('all done!');
   process.exit(0);
 });
-
-
-
-
-
-
-

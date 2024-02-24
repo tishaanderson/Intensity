@@ -1,3 +1,5 @@
+resolvers
+
 const { Workout, Exercise, User} = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
@@ -52,7 +54,7 @@ const resolvers = {
       return { token, user};
     },
 
-    createWorkout: async (_, { name, exerciseIds }) => {
+    addWorkout: async (_, { name, exerciseIds }) => {
       const workout = new Workout({
         name,
         exercises: exerciseIds
@@ -64,7 +66,7 @@ const resolvers = {
         throw new Error(err);
       }
     },
-    createExercise: async (_, { name, sets, reps, duration_minutes }) => {
+    addExercise: async (_, { name, sets, reps, duration_minutes }) => {
       const exercise = new Exercise({
         name,
         sets,

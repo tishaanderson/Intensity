@@ -1,32 +1,38 @@
-const { Schema, model} = require('mongoose');
+// Importing Schema and model from mongoose to define the schema and create the model
+const { Schema, model } = require('mongoose');
 
-const exerciseSchema =  new Schema({
-    name: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    sets:  {
-        type: Number,
-        required: true
-      },
-    reps: {
-        type: Number,
-        required: true
-      },
-    duration_minutes:  {
-        type: Number,
-        required: false
-      },
-      workout_type: [{
-        type: Schema.Types.ObjectId,
-         ref: 'Workout'
-      }]
-
+// Defining the exercise schema using the Schema constructor
+const exerciseSchema = new Schema({
+  // Name of the exercise, must be a string and is required
+  name: {
+    type: String,
+    required: true,
+    unique: true, // Ensures uniqueness of exercise names
+  },
+  // Number of sets for the exercise, must be a number and is required
+  sets: {
+    type: Number,
+    required: true,
+  },
+  // Number of reps for the exercise, must be a number and is required
+  reps: {
+    type: Number,
+    required: true,
+  },
+  // Duration of the exercise in minutes, optional field
+  duration_minutes: {
+    type: Number,
+    required: false,
+  },
+  // Reference to the workout type associated with the exercise
+  workout_type: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Workout', // Refers to the Workout model
+  }],
 });
 
+// Creating the Exercise model using the exercise schema
 const Exercise = model('Exercise', exerciseSchema);
 
+// Exporting the Exercise model to use it in other parts of the application
 module.exports = Exercise;
-
-

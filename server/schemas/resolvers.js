@@ -1,10 +1,11 @@
-
-
-const { Workout, Exercise, User} = require('../models');
+// Importing necessary models and utilities
+const { Workout, Exercise, User } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
+// Defining resolvers for GraphQL queries and mutations
 const resolvers = {
   Query: {
+    // Resolver for fetching all workouts
     workouts: async () => {
       try {
         const workouts = await Workout.find();
@@ -13,6 +14,7 @@ const resolvers = {
         throw new Error(err);
       }
     },
+    // Resolver for fetching a workout by its ID
     workout: async (_, { id }) => {
       try {
         const workout = await Workout.findById(id);
@@ -21,6 +23,7 @@ const resolvers = {
         throw new Error(err);
       }
     },
+    // Resolver for fetching all exercises
     exercises: async () => {
       try {
         const exercises = await Exercise.find();
@@ -29,6 +32,7 @@ const resolvers = {
         throw new Error(err);
       }
     },
+    // Resolver for fetching an exercise by its ID
     exercise: async (_, { id }) => {
       try {
         const exercise = await Exercise.findById(id);
@@ -39,22 +43,28 @@ const resolvers = {
     },
   },
   Mutation: {
-    addUser: async (_, {username, email, password}) => {
-      const user = await User.create({username, email, password})
-      const token = signToken({username, email, _id: user._id})
-      return { token, user}
+    // Resolver for adding a new user
+    addUser: async (_, { username, email, password }) => {
+      const user = await User.create({ username, email, password });
+      const token = signToken({ username, email, _id: user._id });
+      return { token, user };
     },
-
-    login: async (_, {username, password}) => {
-      const user = await User.findOne({username});
-      if (!user){throw AuthenticationError};
+    // Resolver for user login
+    login: async (_, { username, password }) => {
+      const user = await User.findOne({ username });
+      if (!user) {
+        throw AuthenticationError;
+      }
       const correctPassword = await user.isCorrectPassword(password);
-      if (!correctPassword){throw AuthenticationError};
+      if (!correctPassword) {
+        throw AuthenticationError;
+      }
       const token = signToken(user);
-      return { token, user};
+      return { token, user };
     },
-
-    addWorkout: async (_, { name, exerciseIds }) => {
+    // Resolver for adding a new workout
+    addWorkout: async (_, { name, exerciseIds }, context) => {
+      console.log(context);
       const workout = new Workout({
         name,
         exercises: exerciseIds
@@ -66,6 +76,7 @@ const resolvers = {
         throw new Error(err);
       }
     },
+    // Resolver for adding a new exercise
     addExercise: async (_, { name, sets, reps, duration_minutes }) => {
       const exercise = new Exercise({
         name,
@@ -83,4 +94,5 @@ const resolvers = {
   }
 };
 
+// Exporting the resolvers
 module.exports = resolvers;

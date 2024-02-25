@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client';
 
+//query to fetch all users
 export const ALL_USERS = gql`
   query allUsers {
     users {
@@ -20,6 +21,7 @@ export const ALL_USERS = gql`
     }
   }`;
 
+//query to fetch a single user by ID
 export const SINGLE_USER = gql`
   query singleUser {
     user(id: $userId: ID!) {
@@ -40,6 +42,7 @@ export const SINGLE_USER = gql`
     }
   }`;
 
+//query to fetch all workouts
 export const ALL_WORKOUTS = gql`
   query allWorkouts {
     workouts {
@@ -55,6 +58,7 @@ export const ALL_WORKOUTS = gql`
     }
   }`;
 
+//query to fetch single workout by ID
 export const SINGLE_WORKOUT = gql`
   query singleWorkout($workoutId: ID!) {
     workout(id: $workoutId) {
@@ -70,6 +74,7 @@ export const SINGLE_WORKOUT = gql`
     }
   }`;
 
+//query to fetch all exercises
 export const ALL_EXERCISES = gql`
   query allExercises {
     exercises {
@@ -85,6 +90,7 @@ export const ALL_EXERCISES = gql`
     }
   }`;
 
+//query to fetch single exercise by ID
 export const SINGLE_EXERCISE = gql`
   query singleExercise($exerciseId: ID!) {
     exercise(id: $exerciseId) {

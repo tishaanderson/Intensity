@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Header.css'
 import Logo from '../assets/images/Logo.png'
 import Navbar from './Navbar'
-import SignUp from './SignUp'
+import SignUpBtn from './SignUpBtn'
 
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
       <img src={Logo} alt="" className='logo' />
 
       <Navbar />
-      <SignUp />
+      <SignUpBtn />
 
     </div>
   )

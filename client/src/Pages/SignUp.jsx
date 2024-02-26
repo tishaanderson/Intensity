@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import PageHeader from '../components/PageHeader'
-import SignUpBtn from '../components/SignUp'
 import { ADD_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
 import '../styles/SignUp.css'

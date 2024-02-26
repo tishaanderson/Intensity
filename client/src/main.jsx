@@ -1,19 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import './output.css'
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
-import App from './App.jsx';
+import App from './App.jsx'
 
-import Home from './pages/Home';
-import Workouts from './pages/Workouts';
-import WhyUs from './pages/WhyUs';
-import LogIn from './pages/LogIn';
-import SignUp from './pages/SignUp';
-import Error from './pages/Error';
-import ExerciseDetail from './pages/ExerciseDetail';
-// import SignUp from './components/SignUp.jsx';
+import Home from './pages/Home'
+import Workouts from './pages/Workouts'
+import WhyUs from './pages/WhyUs'
+import LogIn from './pages/Login'
+import SignUp from './pages/SignUp'
+import Error from './pages/Error'
+import ExerciseDetail from './pages/ExerciseDetail'
 
 const router = createBrowserRouter([
   {
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />
       }, 
-      // {
-      //   path: '/home',
-      //   element: <Home />
-      // },
       {
         path: '/workouts',
         element: <Workouts />
@@ -45,14 +40,6 @@ const router = createBrowserRouter([
         path: '/login',
         element: <LogIn />
       },
-      // {
-      //   path: '/pages/sign-up',
-      //   element: <SignUp />
-      // },
-      // {
-      //   path: '/login',
-      //   element: <Login />
-      // }, 
       {
         path: '/sign-up',
         element: <SignUp />

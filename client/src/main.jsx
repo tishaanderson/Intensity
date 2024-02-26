@@ -5,18 +5,16 @@ import './output.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx';
-// import Signup from './pages/Signup';
-// import Login from './pages/Login';
-// import Profile from './pages/Profile';
-import Hero from './components/Hero.jsx'
+import Hero from './components/Hero'
 
-import Home from './pages/Home.jsx';
-import Workouts from './pages/Workouts.jsx';
-import WhyUs from './pages/WhyUs.jsx';
-import Plans from './pages/Plans.jsx';
-import JoinIn from './pages/JoinIn.jsx';
-import Error from './pages/Error.jsx';
-import ExerciseDetail from './pages/ExerciseDetail.jsx';
+import Home from './pages/Home';
+import Workouts from './pages/Workouts';
+import WhyUs from './pages/WhyUs';
+import Plans from './pages/Plans';
+// import SignUp from './pages/SignUp';
+import Error from './pages/Error';
+import ExerciseDetail from './pages/ExerciseDetail';
+// import SignUp from './components/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +27,7 @@ const router = createBrowserRouter([
         element: <Hero />
       }, 
       {
-        path: '/',
+        path: '/home',
         element: <Home />
       },
       {
@@ -48,10 +46,10 @@ const router = createBrowserRouter([
         path: '/plans',
         element: <Plans />
       },
-      {
-        path: '/pages/Joinin',
-        element: <JoinIn />
-      },
+      // {
+      //   path: '/pages/sign-up',
+      //   element: <SignUp />
+      // },
       // {
       //   path: '/login',
       //   element: <Login />

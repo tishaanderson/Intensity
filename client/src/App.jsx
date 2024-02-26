@@ -8,7 +8,6 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import './index.css'
-import Hero from './components/Hero'
 import Header from './components/Header'
 
 
@@ -40,7 +39,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
     <div className='App'>
-        {/* <Header /> */}
+        <Header />
         <Outlet />
     </div>
     </ApolloProvider>

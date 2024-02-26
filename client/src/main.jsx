@@ -9,8 +9,8 @@ import App from './App.jsx';
 import Home from './pages/Home';
 import Workouts from './pages/Workouts';
 import WhyUs from './pages/WhyUs';
-import Plans from './pages/Plans';
-// import SignUp from './pages/SignUp';
+import LogIn from './pages/LogIn';
+import SignUp from './pages/SignUp';
 import Error from './pages/Error';
 import ExerciseDetail from './pages/ExerciseDetail';
 // import SignUp from './components/SignUp.jsx';
@@ -42,8 +42,8 @@ const router = createBrowserRouter([
         element: <WhyUs />
       },
       {
-        path: '/plans',
-        element: <Plans />
+        path: '/login',
+        element: <LogIn />
       },
       // {
       //   path: '/pages/sign-up',
@@ -52,10 +52,12 @@ const router = createBrowserRouter([
       // {
       //   path: '/login',
       //   element: <Login />
-      // }, {
-      //   path: '/signup',
-      //   element: <Signup />
-      // }, {
+      // }, 
+      {
+        path: '/sign-up',
+        element: <SignUp />
+      }, 
+      //{
       //   path: '/me',
       //   element: <Profile />
       // },

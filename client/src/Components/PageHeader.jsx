@@ -16,7 +16,7 @@ const PageHeader = () => {
       </li>
       <li><Link to='/workouts'>Workouts</Link></li>
       <li><Link to='/why-us'>Why Us</Link></li>
-      <li><Link to='/plans'>Plans</Link></li>
+      <li><Link to='/login'>Plans</Link></li>
     </ul>
     <div>
       

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PageHeader from '../components/PageHeader'
-import SignUp from '../components/SignUp'
+import SignUpBtn from '../components/SignUp'
 import { ADD_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
 import '../styles/SignUp.css'
@@ -16,7 +16,7 @@ const SignUp = () => {
 const [AddUser] =  useMutation(ADD_USER)
 const handleSubmit = async (event) => {
   event.preventDefault()
-  alert('test')
+
   console.log(formData)
 const {data} = await AddUser({
   variables: formData
@@ -26,8 +26,7 @@ window.location.replace('/')
 }
   return (
     <div className='h-screen'>
-      <PageHeader />
-      <div class=" w-full max-w-xs" >
+      <div class=" relative flex min-h-screen flex-col justify-center overflow-hidden sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10" >
         <form  onSubmit = {handleSubmit} class="  bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
         <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="email">

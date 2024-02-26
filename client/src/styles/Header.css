@@ -6,21 +6,16 @@
 .logo {
     width: 8rem;
     height: 8rem;
-    
 }
 
-.header-menu{
-    list-style: none;
+.navbar{
     display: flex;
     gap: 2rem;
     color: white;
+    margin: 3rem;
 }
 
-/* .header-menu>li{
-    cursor: pointer;
-} */
-
-.header-menu>li:hover{
+.navbar>li:hover{
     cursor: pointer;
     color:orange;
     cursor: pointer;

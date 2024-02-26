@@ -82,9 +82,11 @@ html {
 .right-h {
   flex: 1;
   background-color: #f48915;
+  z-index: 0;
 }
 
 .signUpBtn {
   position: absolute;
   margin: 2.5rem 7rem;
+  z-index: 1 !important;
 }

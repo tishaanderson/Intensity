@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/Main.css'
-import '../index.css'
+import '../styles/MainImg.css'
 import SignUpBtn from './SignUpBtn'
+import MainImg from '../assets/images/mainImage.png'
 
 
 const RightAside = () => {
@@ -9,8 +10,12 @@ const RightAside = () => {
     <>
         <div className='right-h'>
         <SignUpBtn />
+        
+        <img src={MainImg} alt='' className='mainImage' />
 
         </div>
+
+        
     </>
 
   )

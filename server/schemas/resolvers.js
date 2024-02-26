@@ -52,6 +52,7 @@ const resolvers = {
     // Resolver for user login
     login: async (_, { username, password }) => {
       const user = await User.findOne({ username });
+      console.log(username, password)
       if (!user) {
         throw AuthenticationError;
       }

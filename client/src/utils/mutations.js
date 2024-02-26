@@ -16,27 +16,11 @@ mutation AddUser($username: String!, $email: String!, $password: String!) {
 
 //mutation to login a user
 export const LOGIN_USER = gql `
-mutation LoginUser($username: String!, $password: String!) {
-    loginUser(username: $username, password: $password) { 
-      token
-      user {
-        _id
-        username
-        email
-        workout {
-          _id
-          name
-        }
-        exercise {
-          _id
-          name
-          sets
-          reps
-          duration_minutes
-        }
-      }
-    }
-  }`;
+mutation Login($username: String!, $password: String!) {
+  login(username: $username, password: $password) {
+    token
+  }
+}`;
 
 //Do we want a mutation to UPDATE a USER??
 export const UPDATE_USER = gql`

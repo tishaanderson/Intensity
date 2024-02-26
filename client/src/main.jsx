@@ -13,7 +13,6 @@ import Plans from './pages/Plans';
 // import SignUp from './pages/SignUp';
 import Error from './pages/Error';
 import ExerciseDetail from './pages/ExerciseDetail';
-// import SignUp from './components/SignUp.jsx';
 
 const router = createBrowserRouter([
   {

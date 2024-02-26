@@ -1,10 +1,8 @@
 import React from 'react'
-import PageHeader from '../components/PageHeader'
 
 const Plans = () => {
   return (
     <div className='h-screen'>
-      <PageHeader />
       Plan Prices???
       <div class="w-full max-w-xs">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PageHeader from '../components/PageHeader'
 import SignUp from '../components/SignUp'
 import { ADD_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
@@ -26,7 +25,6 @@ window.location.replace('/')
 }
   return (
     <div className='h-screen'>
-      <PageHeader />
       <div class=" w-full max-w-xs" >
         <form  onSubmit = {handleSubmit} class="  bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
         <div class="mb-6">

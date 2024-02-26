@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import PageHeader from '../components/PageHeader'
-import Join from '../components/Join'
+import SignUp from '../components/SignUp'
 import { ADD_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
-import '../styles/JoinIn.css'
+import '../styles/SignUp.css'
 // import Auth from '../utils/auth'
 
-const JoinIn = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -53,7 +53,7 @@ window.location.replace('/')
               Create Account
             </button>
             <a class="inline-block align-baseline font-bold text-sm text-emerald-500 hover:text-emerald-800" href="#">
-              Sign In
+              Sign Up
             </a>
           </div>
         </form>
@@ -65,4 +65,4 @@ window.location.replace('/')
   )
 }
 
-export default JoinIn
+export default SignUp

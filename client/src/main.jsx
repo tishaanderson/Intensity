@@ -5,7 +5,6 @@ import './output.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx';
-import Hero from './components/Hero'
 
 import Home from './pages/Home';
 import Workouts from './pages/Workouts';
@@ -24,12 +23,12 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Hero />
-      }, 
-      {
-        path: '/home',
         element: <Home />
-      },
+      }, 
+      // {
+      //   path: '/home',
+      //   element: <Home />
+      // },
       {
         path: '/workouts',
         element: <Workouts />

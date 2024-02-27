@@ -4,21 +4,27 @@
         "image": "/images/Chest/ChestType.png"
     },
     {
-        "name": "Legs"
+        "name": "Legs",
+        "image": "/images/Legs/LegsType.png"
     },
     {
-        "name": "Core"
+        "name": "Core",
+        "image": "/images/Core/CoreType.png"
     },
     {
-        "name": "Back"
+        "name": "Back",
+        "image": "/images/Back/BackType.png"
     },
     {
-        "name": "Arms"
+        "name": "Arms",
+        "image": "/images/Arms/ArmsType.png"
     },
     {
-        "name": "Shoulders"
+        "name": "Shoulders",
+        "image": "/images/Shoulders/ShouldersType.png"
     },
     {
-        "name": "Cardio"
+        "name": "Cardio",
+        "image": "/images/Cardio/CardioType.png"
     }
 ]

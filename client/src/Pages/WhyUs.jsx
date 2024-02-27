@@ -5,16 +5,16 @@ import WeightedSquats from '../assets/images/WeightedSquats.png';
 const WhyUs = () => {
   return (
     <div className="container mx-auto my-10">
-      <h1 className="text-4xl font-bold mb-4 text-white">Why Us</h1>
-      <div className="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg">
-        <div className="md:w-1/2 mb-4 md:mb-0">
+      <h1 className="text-4xl font-bold mb-4 text-white" style={{marginLeft:"25px"}}>Why Us</h1>
+      <div className="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg" style={{textAlign:"justify"}}>
+        {/* <div className="md:w-1/2 mb-4 md:mb-0">
           <img
             src={WeightedSquats}
             alt="Weighted Squats"
             className="w-full h-auto rounded-lg"
           />
-        </div>
-        <div className="md:w-1/2 text-gray-800">
+        </div> */}
+        <div className="md:w-3/4 text-gray-800">
           <p className="text-lg mb-4 text-black">
           Welcome to Intensity – Where Your Fitness Journey Finds its Perfect Match!
           </p>
@@ -27,6 +27,13 @@ const WhyUs = () => {
           <p className="text-lg mb-4">
             <strong>Expert Trainers, Your Partners in Success:</strong> We take pride in our diverse team of certified and passionate fitness experts. Our trainers are not just instructors; they are your partners in your fitness journey. Whether you're aiming for weight loss, muscle gain, or overall well-being, our trainers are here to guide, motivate, and support you every step of the way.
           </p>
+          <div className="mb-4 md:mb-0">
+          <img
+            src={WeightedSquats}
+            alt="Weighted Squats"
+            className="w-full h-auto rounded-lg"
+          />
+          </div>
           <p className="text-lg mb-4">
             <strong>Seamless Matching Process:</strong> Finding the right coach shouldn't be a hassle. Our advanced matching algorithm ensures a seamless and efficient process. Simply input your fitness goals, preferences, and any specific requirements you may have, and let Intensity pair you with the perfect trainer who aligns with your objectives and coaching style preferences.
           </p>

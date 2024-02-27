@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
     --lightgrey: #d9d9d9;
@@ -17,16 +17,14 @@
     scroll-behavior: smooth;
 }
 
-.App {
+/* .App {
     background-image: url(./assets/images/background1.jpg);
     mix-blend-mode: overlay;
     background-color: var(--appColor);
     display: flex;
     flex-direction: column;
     /* gap: 6rem; */
-    overflow: hidden;
     
-}
 
 ::-webkit-scrollbar{
     display: none;

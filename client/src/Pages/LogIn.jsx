@@ -1,5 +1,4 @@
 import React, { useState }  from 'react'
-import PageHeader from '../components/PageHeader'
 import { LOGIN_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
 import '../styles/Login.css'
@@ -22,10 +21,7 @@ const LogIn = () => {
   window.location.replace('/')
 }
   return (
-    <div className='h-screen loginCard'>
-      {/* <PageHeader /> */}
-
-      
+    <div className='h-screen loginCard'>      
       <div class="relative flex min-h-screen flex-col justify-center overflow-hidden sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
         <form onSubmit = {handleSubmit} class=" bg-white shadow-md rounded px-16 pt-12 pb-16 mb-8">
           <div class="mb-4">

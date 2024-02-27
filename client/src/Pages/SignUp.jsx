@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { ADD_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
 import '../styles/SignUp.css'
-// import Auth from '../utils/auth'
+import Auth from '../utils/auth'
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +19,7 @@ const handleSubmit = async (event) => {
 const {data} = await AddUser({
   variables: formData
 })
-// Auth.login(data.addUser.token)
+Auth.login(data.addUser.token)
 window.location.replace('/')
 }
   return (

@@ -5,6 +5,7 @@ import { setContext } from '@apollo/client/link/context'
 import './styles/Main.css'
 import Header from './components/Header'
 import RightAside from './components/RightAside'
+import Footer from './Components/Footer';
 
 
 const httpLink = createHttpLink({
@@ -38,10 +39,11 @@ function App() {
         
         <div className='main'>
           <Header />
-          <Outlet />          
+          <Outlet />         
         </div>
         <RightAside />
     </div>
+    <Footer />
     </ApolloProvider>
   )
 }

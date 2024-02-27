@@ -2,8 +2,8 @@ const typeDefs = `
   type Workout{
     _id: ID
     name: String
+    image: String
     exercises: [Exercise]
-  
   }
 
   type Exercise {
@@ -12,7 +12,6 @@ const typeDefs = `
     sets: Int
     reps: Int
     duration_minutes: Int
-    workout_type: [Workout]
   }
 
   type User {
@@ -39,8 +38,8 @@ const typeDefs = `
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
-    createWorkout(name: String!, exerciseIds: [ID!]!): Workout
-    createExercise(name: String!, sets: Int!, reps: Int!, duration_minutes: Int): Exercise
+    addWorkout(name: String!, exerciseIds: [ID!]!): User
+    addExercise(name: String!, sets: Int!, reps: Int!, duration_minutes: Int): Exercise
     login(username: String!, password: String!): Auth
   }
 `;

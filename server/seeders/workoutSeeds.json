@@ -1,6 +1,7 @@
 [
     {
-        "name": "Chest"
+        "name": "Chest",
+        "image": "/images/Chest/ChestType.png"
     },
     {
         "name": "Legs"

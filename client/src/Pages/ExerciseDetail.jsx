@@ -1,8 +1,12 @@
 import React from 'react'
+import ExerciseCard from '../components/ExerciseCard'
 
 const ExerciseDetail = () => {
   return (
-    <div>ExerciseDetail</div>
+    <div> 
+      <ExerciseCard />
+      Exercise Card
+    </div>
   )
 }
 

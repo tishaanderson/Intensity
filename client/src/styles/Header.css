@@ -4,22 +4,19 @@
 }
 
 .logo {
-    width: 10rem;
+    width: 8rem;
     height: 8rem;
 }
 
-.header-menu{
-    list-style: none;
+.navbar{
     display: flex;
     gap: 2rem;
     color: white;
+    margin: 3rem;
+    z-index: 1;
 }
 
-/* .header-menu>li{
-    cursor: pointer;
-} */
-
-.header-menu>li:hover{
+.navbar>li:hover{
     cursor: pointer;
     color:orange;
     cursor: pointer;

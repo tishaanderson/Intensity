@@ -1,30 +1,30 @@
 [
     {
         "name": "Chest",
-        "image": "/images/Chest/ChestType.png"
+        "image": "images/Chest/ChestType.png"
     },
     {
         "name": "Legs",
-        "image": "/images/Legs/LegsType.png"
+        "image": "images/Legs/LegsType.png"
     },
     {
         "name": "Core",
-        "image": "/images/Core/CoreType.png"
+        "image": "images/Core/CoreType.png"
     },
     {
         "name": "Back",
-        "image": "/images/Back/BackType.png"
+        "image": "images/Back/BackType.png"
     },
     {
         "name": "Arms",
-        "image": "/images/Arms/ArmsType.png"
+        "image": "images/Arms/ArmsType.png"
     },
     {
         "name": "Shoulders",
-        "image": "/images/Shoulders/ShouldersType.png"
+        "image": "images/Shoulders/Shoulders.png"
     },
     {
         "name": "Cardio",
-        "image": "/images/Cardio/CardioType.png"
+        "image": "images/Cardio/CardioType.png"
     }
 ]

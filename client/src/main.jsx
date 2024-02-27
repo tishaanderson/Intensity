@@ -9,7 +9,7 @@ import App from './App.jsx'
 import Home from './pages/Home'
 import Workouts from './pages/Workouts'
 import WhyUs from './pages/WhyUs'
-import LogIn from './pages/Login'
+import Login from './pages/Login.jsx'
 import SignUp from './pages/SignUp'
 import Error from './pages/Error'
 import ExerciseDetail from './pages/ExerciseDetail'
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <LogIn />
+        element: <Login />
       },
       {
         path: '/sign-up',

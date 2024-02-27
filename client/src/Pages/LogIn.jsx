@@ -3,7 +3,7 @@ import { LOGIN_USER } from '../utils/mutations'
 import {useMutation} from '@apollo/client'
 import '../styles/Login.css'
 
-const LogIn = () => {
+const Login = () => {
     const [formData, setFormData] = useState({
       username: '',
       password: '',
@@ -55,4 +55,4 @@ const LogIn = () => {
 }
   
 
-export default LogIn
+export default Login

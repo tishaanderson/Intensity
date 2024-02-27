@@ -47,20 +47,22 @@ export const DELETE_USER = gql`
 
 //mutation to add a workout
 export const ADD_WORKOUT = gql`
-  mutation AddWorkout($name: String!, $exercise: [ID!]) {
-    addWorkout(name: $name, exercise: $exercise) {
+  mutation AddWorkout($name: String!, $image: String!, $exercise: [ID!]) {
+    addWorkout(name: $name, image: $image, exercise: $exercise) {
       _id
       name
+      image
     }
   }`;
 
 //UPDATE WORKOUT??
 
 export const UPDATE_WORKOUT = gql`
-  mutation UpdateWorkout($workoutId: ID!, $name: String) {
-    updateWorkout(id: $workoutId, name: $name) {
+  mutation UpdateWorkout($workoutId: ID!, $name: String, $image: String,) {
+    updateWorkout(id: $workoutId, name: $name, image: $image) {
       _id
       name
+      image
     }
   }`;
 
@@ -71,6 +73,7 @@ mutation DeleteWorkout($workoutId: ID!) {
   deleteWorkout(id: $workoutId) {
     _id
     name
+    image
   }
 }`;
 

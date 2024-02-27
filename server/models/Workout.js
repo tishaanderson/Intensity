@@ -8,6 +8,9 @@ const workoutSchema = new Schema({
         required: true,
         unique: true,
     },
+    image: {
+        type: String,
+    },
     // instructor: {
     //     type: Schema.Types.ObjectId,
     //     ref: 'Instructor'

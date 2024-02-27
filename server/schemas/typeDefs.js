@@ -2,6 +2,7 @@ const typeDefs = `
   type Workout{
     _id: ID
     name: String
+    image: String
     exercises: [Exercise]
   }
 

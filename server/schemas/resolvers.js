@@ -64,10 +64,11 @@ const resolvers = {
       return { token, user };
     },
     // Resolver for adding a new workout
-    addWorkout: async (_, { name, exerciseIds }, context) => {
+    addWorkout: async (_, { name, image, exerciseIds }, context) => {
       console.log(context);
       const workout = new Workout({
         name,
+        image,
         exercises: exerciseIds
       });
       try {

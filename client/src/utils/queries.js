@@ -10,6 +10,7 @@ export const ALL_USERS = gql`
       workout {
         _id
         name
+        image
       }
       exercise {
         _id
@@ -31,6 +32,7 @@ export const SINGLE_USER = gql`
        workout {
          _id
         name
+        image
       }
       exercise {
          _id
@@ -48,6 +50,7 @@ export const ALL_WORKOUTS = gql`
     workouts {
       _id
       name
+      image
       exercise {
         _id
         name
@@ -64,6 +67,7 @@ export const SINGLE_WORKOUT = gql`
     workout(id: $workoutId) {
       _id
       name
+      image
       exercise {
         _id
         name

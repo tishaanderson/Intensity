@@ -8,6 +8,7 @@ html {
 
 .App {
   display: flex;
+  min-height: 92vh;
 }
 
 .main {

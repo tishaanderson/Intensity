@@ -32,6 +32,21 @@ db.once('open', async () => {
       //   }
       // );
     }
+
+    for (let i = 0; i < workoutSeeds.length; i++) {
+      // Create a new workout and obtain its ID
+      const { _id, exercise } = await Workout.create(workoutSeeds[i]);
+
+      // Find the user associated with the workout and update its workouts array with the new workout ID
+      // const user = await Exercise.findOneAndUpdate(
+      //   { username: workout },
+      //   {
+      //     $addToSet: {
+      //       workouts: _id,
+      //     },
+      //   }
+      // );
+    }
   } catch (err) {
     // Log any errors and exit the process with a non-zero status code
     console.error(err);

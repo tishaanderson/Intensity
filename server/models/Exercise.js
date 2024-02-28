@@ -26,7 +26,7 @@ const exerciseSchema = new Schema({
   },
   exercise_type: {
     type: String,
-}
+  }
   // Reference to the workout type associated with the exercise
   // workout_type: [{
   //   type: Schema.Types.ObjectId,

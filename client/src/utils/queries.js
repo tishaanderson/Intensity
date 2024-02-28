@@ -46,6 +46,23 @@ export const SINGLE_USER = gql`
     }
   }`;
 
+export const USER_PROFILE = gql`
+  query UserProfile {
+    user {
+      username
+      exercise {
+        name
+        _id
+        duration_minutes
+        exercise_type
+        reps
+        sets
+      }
+      _id
+    }
+  }
+`
+
 //query to fetch all workouts
 export const ALL_WORKOUTS = gql`
   query allWorkouts {
@@ -53,7 +70,7 @@ export const ALL_WORKOUTS = gql`
       _id
       name
       image
-      exercise {
+      exercises {
         _id
         name
         sets
@@ -68,15 +85,16 @@ export const SINGLE_WORKOUT = gql`
   query singleWorkout($workoutId: ID!) {
     workout(id: $workoutId) {
       _id
-      name
-      image
-      exercise {
+      exercises {
         _id
         name
         sets
         reps
         duration_minutes
+        exercise_type
       }
+      image
+      name
     }
   }`;
 

@@ -5,6 +5,11 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 // Defining resolvers for GraphQL queries and mutations
 const resolvers = {
   Query: {
+    user: async (_, vars, context) => {
+      if (context.user) {
+        return User.findOne({ _id: context.user._id }).populate('exercise')
+      }
+    },
     // Resolver for fetching all workouts
     workouts: async () => {
       try {
@@ -19,6 +24,14 @@ const resolvers = {
       try {
         const workout = await Workout.findById(id);
         return workout;
+      } catch (err) {
+        throw new Error(err);
+      }
+    },
+    workouts: async () => {
+      try {
+        const workouts = await Workout.find();
+        return workouts;
       } catch (err) {
         throw new Error(err);
       }
@@ -94,6 +107,18 @@ const resolvers = {
         throw new Error(err);
       }
     },
+    addUserExercise: async (_, { id }, context) => {
+
+      console.log(context.user.data)
+
+      const user = await User.findOneAndUpdate(
+        { _id: context.user._id },
+        { $addToSet: { exercise: id } },
+        { new: true }
+      ).populate('exercise')
+
+      return user;
+    }
   }
 };
 

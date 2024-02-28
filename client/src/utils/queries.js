@@ -26,7 +26,7 @@ export const ALL_USERS = gql`
 //query to fetch a single user by ID
 export const SINGLE_USER = gql`
   query singleUser {
-    user(id: $userId: ID!) {
+    user(userId: id) {
       _id
       username
       email

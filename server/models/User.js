@@ -22,10 +22,10 @@ const userSchema = new Schema({
     required: true,
   },
   // Reference to workouts associated with the user
-  workout: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Workout'
-  }],
+  // workout: [{
+  //   type: Schema.Types.ObjectId,
+  //   ref: 'Workout'
+  // }],
   // Reference to exercises associated with the user
   exercise: [{
     type: Schema.Types.ObjectId,

@@ -3,6 +3,7 @@ const db = require('../config/connection');
 const { User, Exercise, Workout } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const workoutSeeds = require('./workoutSeeds.json');
+const exerciseSeeds = require('./exerciseSeeds.json')
 const cleanDB = require('./cleanDB');
 
 // Once the database connection is open, execute the seeding process
@@ -17,19 +18,19 @@ db.once('open', async () => {
     await User.create(userSeeds);
 
     // Iterate over workoutSeeds to create workouts and associate them with users
-    for (let i = 0; i < workoutSeeds.length; i++) {
+    for (let i = 0; i < exerciseSeeds.length; i++) {
       // Create a new workout and obtain its ID
-      const { _id, workout } = await Workout.create(workoutSeeds[i]);
+      const { _id, exercise } = await Exercise.create(exerciseSeeds[i]);
 
       // Find the user associated with the workout and update its workouts array with the new workout ID
-      const user = await Exercise.findOneAndUpdate(
-        { username: workout },
-        {
-          $addToSet: {
-            workouts: _id,
-          },
-        }
-      );
+      // const user = await Exercise.findOneAndUpdate(
+      //   { username: workout },
+      //   {
+      //     $addToSet: {
+      //       workouts: _id,
+      //     },
+      //   }
+      // );
     }
   } catch (err) {
     // Log any errors and exit the process with a non-zero status code

@@ -12,23 +12,26 @@ const exerciseSchema = new Schema({
   // Number of sets for the exercise, must be a number and is required
   sets: {
     type: Number,
-    required: true,
+    required: false,
   },
   // Number of reps for the exercise, must be a number and is required
   reps: {
     type: Number,
-    required: true,
+    required: false,
   },
   // Duration of the exercise in minutes, optional field
   duration_minutes: {
     type: Number,
     required: false,
   },
+  exercise_type: {
+    type: String,
+}
   // Reference to the workout type associated with the exercise
-  workout_type: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Workout', // Refers to the Workout model
-  }],
+  // workout_type: [{
+  //   type: Schema.Types.ObjectId,
+  //   ref: 'Workout', // Refers to the Workout model
+  // }],
 });
 
 // Creating the Exercise model using the exercise schema

@@ -19,7 +19,7 @@ const Navbar = () => {
         {Auth.loggedIn() ? (
           <div>
             {/* <li>Welcome User!</li> */}
-            <button onClick={Auth.logout} class='button-override nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1'>Logout</button>
+            <button onClick={Auth.logout} class='button-override nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1'>Profile</button>
           </div>
         ) : (
           <div>

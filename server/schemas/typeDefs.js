@@ -21,7 +21,7 @@ const typeDefs = `
     email: String
     password: String
     workout: [Workout]
-    exercises: [Exercise]
+    exercise: [Exercise]
   }
 
   type Auth {
@@ -41,6 +41,7 @@ const typeDefs = `
     addUser(username: String!, email: String!, password: String!): Auth
     addWorkout(name: String!, exerciseIds: [ID!]!): User
     addExercise(name: String!, sets: Int!, reps: Int!, duration_minutes: Int): Exercise
+    addUserExercise(id: ID!): User
     login(username: String!, password: String!): Auth
   }
 `;

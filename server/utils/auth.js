@@ -17,10 +17,12 @@ module.exports = {
     // Allow token to be sent via req.body, req.query, or headers
     let token = req.body.token || req.query.token || req.headers.authorization;
 
+
     // If token is sent via headers, extract the actual token
     if (req.headers.authorization) {
       token = token.split(' ').pop().trim();
     }
+
 
     // If no token is provided, return the request as it is
     if (!token) {

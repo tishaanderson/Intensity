@@ -1,8 +1,6 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin-left: 25px;
-    margin-top: 25px;
 }
 
 .logo {
@@ -18,8 +16,12 @@
     z-index: 1;
 }
 
-.navbar>li:hover{
+.nav-link:hover{
     cursor: pointer;
-    color:orange;
+    color:black;
     cursor: pointer;
+}
+
+.button-override{
+    padding-top: 0px
 }

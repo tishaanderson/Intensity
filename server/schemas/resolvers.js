@@ -79,12 +79,13 @@ const resolvers = {
       }
     },
     // Resolver for adding a new exercise
-    addExercise: async (_, { name, sets, reps, duration_minutes }) => {
+    addExercise: async (_, { name, sets, reps, duration_minutes, exercise_type }) => {
       const exercise = new Exercise({
         name,
         sets,
         reps,
-        duration_minutes
+        duration_minutes,
+        exercise_type
       });
       try {
         const result = await exercise.save();

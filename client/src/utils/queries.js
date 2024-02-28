@@ -18,6 +18,7 @@ export const ALL_USERS = gql`
         sets
         reps
         duration_minutes
+        exercise_type
       }
     }
   }`;
@@ -40,6 +41,7 @@ export const SINGLE_USER = gql`
         sets
         reps
         duration_minutes
+        exercise_type
       }
     }
   }`;
@@ -87,10 +89,7 @@ export const ALL_EXERCISES = gql`
       sets
       reps
       duration_minutes
-      workout_type {
-        _id
-        name
-      }
+      exercise_type
     }
   }`;
 
@@ -103,9 +102,6 @@ export const SINGLE_EXERCISE = gql`
       sets
       reps
       duration_minutes
-      workout_type {
-        _id
-        name
-      }
+      exercise_type
     }
   }`;

@@ -12,6 +12,7 @@ const typeDefs = `
     sets: Int
     reps: Int
     duration_minutes: Int
+    exercise_type: String
   }
 
   type User {

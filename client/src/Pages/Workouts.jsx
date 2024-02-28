@@ -1,5 +1,5 @@
 import React from 'react'
-import WorkoutCard from '../components/WorkOutCard'
+import WorkoutCard from '../components/WorkoutCard'
 
 const Workouts = () => {
   return (

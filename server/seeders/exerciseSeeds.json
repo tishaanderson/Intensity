@@ -3,140 +3,140 @@
     "name": "Bench Press",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Chest"
   },
   {
     "name": "Dumbbell Incline Press",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Chest"
   },
   {
     "name": "Chest Cable Flys",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Chest"
   },
   {
     "name": "Push Ups",
     "sets": 3,
     "reps": 15,
-    "exercise_type": ""
+    "exercise_type": "Chest"
   },
   {
     "name": "Chest Dips",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Chest"
   },
   {
     "name": "Body Squats",
     "sets": 3,
     "reps": 15,
-    "exercise_type": ""
+    "exercise_type": "Legs"
   },
   {
     "name": "Weighted Squats",
     "sets": 4,
     "reps": 8,
-    "exercise_type": ""
+    "exercise_type": "Legs"
   },
   {
     "name": "Leg Press",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Legs"
   },
   {
     "name": "Leg Extensions",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Legs"
   },
   {
     "name": "Lunges",
     "sets": 3,
     "reps": 10,
     "duration_minutes": 2,
-    "exercise_type": ""
+    "exercise_type": "Lungs"
   },
   {
     "name": "Plank",
     "duration_minutes": 2,
-    "exercise_type": ""
+    "exercise_type": "Core"
   },
   {
     "name": "Crunches",
     "sets": 3,
     "reps": 20,
-    "exercise_type": ""
+    "exercise_type": "Core"
   },
   {
     "name": "Russian Twist",
     "sets": 3,
     "reps": 15,
     "duration_minutes": 2,
-    "exercise_type": ""
+    "exercise_type": "Core"
   },
   {
     "name": "Pull Up Bar Knees to Tummy",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Core"
   },
   {
     "name": "Side Dumbbell Crunches",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Core"
   },
   {
     "name": "Back Cable Row",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Back"
   },
   {
     "name": "Lat Pulldown",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Back"
   },
   {
     "name": "Bent Over Dumbbell Row",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Back"
   },
   {
     "name": "Assisted Pull or Body Weight",
     "sets": 3,
     "reps": 8,
-    "exercise_type": ""
+    "exercise_type": "Back"
   },
   {
     "name": "Back Bend Over Rows",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Back"
   },
   {
     "name": "Hammer Dumbbell Curls",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Arms"
   },
   {
     "name": "Triceps Cable Extension",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Arms"
   },
   {
-    "name": "Skull Crushers (Tris)",
+    "name": "Skull Crushers (Tric)",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Arms"
   },
   {
     "name": "Barbell Bicep Curl",
@@ -145,33 +145,33 @@
     "exercise_type": "Arms"
   },
   {
-    "name": "Shoulder Raises Single or Together",
+    "name": "Shoulder Dumbbell Raises Single or Together",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Shoulder"
   },
   {
     "name": "Shoulder Press Dumbbell",
     "sets": 3,
     "reps": 10,
-    "exercise_type": ""
+    "exercise_type": "Shoulder"
   },
   {
     "name": "Shoulder Cable Extension",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Shoulder"
   },
   {
     "name": "Shoulder Cable Crossover",
     "sets": 3,
     "reps": 12,
-    "exercise_type": ""
+    "exercise_type": "Shoulder"
   },
   {
     "name": "Shoulder Rotation Rehab/Recovery",
     "duration_minutes": 5,
-    "exercise_type": ""
+    "exercise_type": "Shoulder"
   },
   {
     "name": "Stair Master",

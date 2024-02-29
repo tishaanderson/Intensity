@@ -1,28 +1,31 @@
-import React, { useState } from 'react'
-import { LOGIN_USER } from '../utils/mutations'
-import { useMutation } from '@apollo/client'
-import '../styles/Login.css'
-import Auth from '../utils/auth'
+import React, { useState } from 'react';
+import { LOGIN_USER } from '../utils/mutations';
+import { useMutation } from '@apollo/client';
+import '../styles/Login.css';
+import Auth from '../utils/auth';
 
 const LogIn = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
+  });
+  const [LoginUser, { error }] = useMutation(LOGIN_USER); // Destructure the 'error' from the useMutation hook
 
-  })
-  const [LoginUser] = useMutation(LOGIN_USER)
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    // alert("test")
-    // console.log(formData)
-    const { data } = await LoginUser({
-      variables: formData
-    })
+    event.preventDefault();
 
-    Auth.login(data.login.token)
+    try {
+      const { data } = await LoginUser({
+        variables: formData
+      });
 
-    window.location.replace('/')
-  }
+      Auth.login(data.login.token);
+      window.location.replace('/');
+    } catch (error) {
+      console.error('Login failed:', error);
+    }
+  };
+
   return (
     <div className='h-screen loginCard'>
       <div class="relative flex min-h-screen flex-col justify-center overflow-hidden sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
@@ -38,21 +41,17 @@ const LogIn = () => {
               Password
             </label>
             <input value={formData.password} onChange={(event) => setFormData({ ...formData, password: event.target.value })} class="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
-
+            {error && <div className="text-red-500 text-xs italic">Incorrect username or password. Please try again.</div>} {/* Display error message if there's an error */}
           </div>
           <div class="flex items-center justify-between ">
             <button class="bg-emerald-700 hover:bg-emerald-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-              Login In
+              Login
             </button>
-            <a class="inline-block align-baseline font-bold text-sm text-emerald-500 hover:text-emerald-800" href="#">
-              Forgot Password?
-            </a>
           </div>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-
-export default LogIn
+export default LogIn;

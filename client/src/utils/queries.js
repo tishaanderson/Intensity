@@ -7,11 +7,6 @@ export const ALL_USERS = gql`
       _id
       username
       email
-      workout {
-        _id
-        name
-        image
-      }
       exercise {
         _id
         name
@@ -30,11 +25,6 @@ export const SINGLE_USER = gql`
       _id
       username
       email
-       workout {
-         _id
-        name
-        image
-      }
       exercise {
          _id
         name

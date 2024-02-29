@@ -115,3 +115,20 @@ export const DELETE_EXERCISE = gql`
     }
   }`;
 
+export const ADD_USER_EXERCISE = gql`
+  mutation AddUserExercise($id: ID!) {
+    addUserExercise(id: $id) {
+      _id
+      username
+      email
+      exercise {
+        _id
+        name
+        sets
+        reps
+        duration_minutes
+        exercise_type
+        image
+      }
+    }
+  }`

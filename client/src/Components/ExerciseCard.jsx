@@ -7,7 +7,7 @@ import '../styles/Card.css'
 const ExerciseCard = ({ exercise }) => {
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 exerciseContainer" >
+    
 
       <div
         className=" exerciseCard max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -46,7 +46,6 @@ const ExerciseCard = ({ exercise }) => {
         )}
         <CardCheckbox  label='Add to Your Workout Regimen' className='check-box'/>
       </div>
-    </div>
   )
 }
 

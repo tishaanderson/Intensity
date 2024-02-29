@@ -148,58 +148,59 @@
     "name": "Shoulder Dumbbell Raises Single or Together",
     "sets": 3,
     "reps": 12,
-    "exercise_type": "Shoulder"
+    "exercise_type": "Shoulders"
   },
   {
     "name": "Shoulder Press Dumbbell",
     "sets": 3,
     "reps": 10,
-    "exercise_type": "Shoulder"
+    "exercise_type": "Shoulders"
   },
   {
     "name": "Shoulder Cable Extension",
     "sets": 3,
     "reps": 12,
-    "exercise_type": "Shoulder"
+    "exercise_type": "Shoulders"
   },
   {
     "name": "Shoulder Cable Crossover",
     "sets": 3,
     "reps": 12,
-    "exercise_type": "Shoulder"
+    "exercise_type": "Shoulders"
   },
   {
     "name": "Shoulder Rotation Rehab/Recovery",
     "duration_minutes": 5,
-    "exercise_type": "Shoulder"
+    "exercise_type": "Shoulders"
   },
   {
     "name": "Stair Master",
-    "duration_minutes": 20
+    "duration_minutes": 20,
+    "exercise_type": "Cardio"
   },
   {
     "name": "Jump Rope",
     "duration_minutes": 15,
-    "exercise_type": ""
+    "exercise_type": "Cardio"
   },
   {
     "name": "Suicide Drills",
     "duration_minutes": 10,
-    "exercise_type": ""
+    "exercise_type": "Cardio"
   },
   {
     "name": "Treadmills",
     "duration_minutes": 30,
-    "exercise_type": ""
+    "exercise_type": "Cardio"
   },
   {
     "name": "Biking",
     "duration_minutes": 45,
-    "exercise_type": ""
+    "exercise_type": "Cardio"
   },
   {
     "name": "Swimming",
     "duration_minutes": 45,
-    "exercise_type": ""
+    "exercise_type": "Cardio"
   }
 ]

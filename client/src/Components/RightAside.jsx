@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Main.css'
-import '../styles/MainImg.css'
 import SignUpBtn from './SignUpBtn'
 import MainImg from '../assets/images/mainImage.png'
 

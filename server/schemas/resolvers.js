@@ -28,14 +28,14 @@ const resolvers = {
         throw new Error(err);
       }
     },
-    workouts: async () => {
-      try {
-        const workouts = await Workout.find();
-        return workouts;
-      } catch (err) {
-        throw new Error(err);
-      }
-    },
+    // workouts: async () => {
+    //   try {
+    //     const workouts = await Workout.find();
+    //     return workouts;
+    //   } catch (err) {
+    //     throw new Error(err);
+    //   }
+    // },
     // Resolver for fetching all exercises
     exercises: async () => {
       try {
@@ -48,7 +48,7 @@ const resolvers = {
     // Resolver for fetching an exercise by its ID
     exercise: async (_, { id }) => {
       try {
-        const exercise = await Exercise.findById(id);
+        const exercise = await Exercise.findById(id).populate('image');
         return exercise;
       } catch (err) {
         throw new Error(err);
@@ -92,13 +92,14 @@ const resolvers = {
       }
     },
     // Resolver for adding a new exercise
-    addExercise: async (_, { name, sets, reps, duration_minutes, exercise_type }) => {
+    addExercise: async (_, { name, sets, reps, duration_minutes, exercise_type, image }) => {
       const exercise = new Exercise({
         name,
         sets,
         reps,
         duration_minutes,
-        exercise_type
+        exercise_type,
+        image
       });
       try {
         const result = await exercise.save();

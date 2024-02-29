@@ -1,6 +1,6 @@
 // WhyUs.js
 import React from 'react';
-import WeightedSquats from '../assets/images/background1.jpg';
+import WeightedSquats from '/images/background1.jpg';
 
 const WhyUs = () => {
   return (

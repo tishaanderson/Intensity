@@ -1,62 +1,51 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Checkbox } from "@material-tailwind/react";
+import CardCheckbox from './Checkbox'
+import '../styles/Card.css'
 
 
-const ExerciseCard = ({ exercise, }) => {
+
+const ExerciseCard = ({ exercise }) => {
+
   return (
-        <div class="m-8 mx-8" >
-      
+    
+
       <div
-        class="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 ">
-        <div class="relative overflow-hidden bg-cover bg-no-repeat">
+        className=" exerciseCard max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="relative overflow-hidden bg-cover bg-no-repeat">
           <img
-            class="rounded-t-lg"
-            src="https://tecdn.b-cdn.net/img/new/standard/city/062.jpg"
+            className="rounded-t-lg"
+            src={exercise.image}
             alt="" />
         </div>
-        <div class="p-6">
+        <div className="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
             {exercise.name}
           </h5>
-          <p class="text-base text-neutral-600 dark:text-neutral-200">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
         </div>
-        <ul class="w-full">
-          <li
-            class="w-full border-b-2 border-neutral-100 border-opacity-100 px-6 py-3 dark:border-opacity-50">
-            Cras justo odio
-          </li>
-          <li
-            class="w-full border-b-2 border-neutral-100 border-opacity-100 px-6 py-3 dark:border-opacity-50">
-            Dapibus ac facilisis in
-          </li>
-          <li
-            class="w-full border-neutral-100 border-opacity-100 px-6 py-3 dark:border-opacity-50">
-            Vestibulum at eros
-          </li>
-        </ul>
-        <div class="p-6">
-          <a
-            type="button"
-            href="#"
-            class="pointer-events-auto mr-5 inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700">
-            Card Link
-          </a>
-          <a
-            type="button"
-            href="#"
-            class="pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700">
-            Another Link
-          </a>
-          
-        </div>
-        <Checkbox />
+        {exercise.sets && exercise.reps && (
+          <ul className="w-full">
+            <li
+              className="w-full border-b-2 border-neutral-100 border-opacity-100 px-6 py-3 dark:border-opacity-50">
+              Sets: {exercise.sets}
+            </li>
+
+            <li
+              className="w-full border-b-2 border-neutral-100 border-opacity-100 px-6 py-3 dark:border-opacity-50">
+              Reps: {exercise.reps}
+            </li>
+          </ul>
+        )}
+        {exercise.duration_minutes && exercise.duration_minutes > 0 && (
+          <ul className="w-full">
+            <li className="w-full border-neutral-100 border-opacity-100 px-6 py-3 dark:border-opacity-50">
+              Minutes: {exercise.duration_minutes}
+            </li>
+
+          </ul>
+        )}
+        <CardCheckbox  label='Add to Your Workout Regimen' className='check-box'/>
       </div>
-    </div>
   )
 }
 

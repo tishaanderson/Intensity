@@ -1,11 +1,12 @@
 import React from 'react'
 import WorkoutCard from '../components/WorkoutCard'
+import '../styles/Main.css'
+import '../styles/Card.css'
 
 const Workouts = () => {
   return (
-    <div className='h-screen'>
+    <div className=''>
       <WorkoutCard />
-      Workouts
     </div>
   )
 }

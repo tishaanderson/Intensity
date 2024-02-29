@@ -108,6 +108,7 @@ export const ALL_EXERCISES = gql`
       reps
       duration_minutes
       exercise_type
+      image
     }
   }`;
 
@@ -121,5 +122,6 @@ export const SINGLE_EXERCISE = gql`
       reps
       duration_minutes
       exercise_type
+      image
     }
   }`;

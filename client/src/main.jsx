@@ -13,7 +13,7 @@ import LogIn from './pages/Login'
 import SignUp from './pages/SignUp'
 import Error from './pages/Error'
 import ExerciseDetail from './pages/ExerciseDetail'
-
+import Profile from './pages/Profile'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,10 +44,10 @@ const router = createBrowserRouter([
         path: '/sign-up',
         element: <SignUp />
       },
-      //{
-      //   path: '/me',
-      //   element: <Profile />
-      // },
+      {
+        path: '/profile',
+        element: <Profile />
+      },
     ]
   },
 ]);

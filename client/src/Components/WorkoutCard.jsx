@@ -9,9 +9,9 @@ const WorkoutCard = () => {
   const { loading, data } = useQuery(ALL_WORKOUTS);
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 workoutContainer'>
       {loading ? <div>loading...</div> : data.workouts.map((workout) => (
-        <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" key={workout.id}>
+        <div className="workoutCard max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" key={workout.id}>
           <a href="#">
             <img className="rounded-t-lg" alt={workout.name} src={workout.image} />
           </a>

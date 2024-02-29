@@ -3,7 +3,7 @@ import ExerciseCard from '../components/ExerciseCard'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@apollo/client'
 import { ALL_EXERCISES, SINGLE_WORKOUT } from '../utils/queries'
-import '../styles/ExerciseCard.css'
+import '../styles/Card.css'
 
 
 const ExerciseDetail = () => {

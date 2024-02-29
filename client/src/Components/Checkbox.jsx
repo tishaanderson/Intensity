@@ -9,8 +9,9 @@ const CardCheckbox = ({ label, checked, ...props }) => {
   return(
   <div className="checkbox-wrapper">
     <label>
-      <input className={isChecked ? "checked" : ""} type="checkbox" checked={isChecked} onChange={() => setIsChecked((prev) => !prev)} {...props} />
       <span>{label}</span>
+      <input className={isChecked ? "checked" : ""} type="checkbox" checked={isChecked} onChange={() => setIsChecked((prev) => !prev)} {...props} />
+      
     </label>
   </div> 
 );

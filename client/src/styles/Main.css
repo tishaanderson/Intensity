@@ -4,11 +4,13 @@
 
 html {
   background-image: url(/images/background1.jpg);
+  /* height: 100%;
+  margin: 0; */
 }
 
 .App {
   display: flex;
-  min-height: 92vh;
+  min-height: 100vh;
 }
 
 .main {
@@ -90,4 +92,12 @@ html {
   position: absolute;
   margin: 2.5rem 7rem;
   z-index: 1 !important;
+}
+
+.mainImage {
+  position: absolute;
+  right: 1rem;
+  padding-top: 15rem;
+  width: 23rem;
+  z-index: -1;
 }

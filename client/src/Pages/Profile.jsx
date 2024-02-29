@@ -5,13 +5,15 @@ import ExerciseCard from "../components/ExerciseCard";
 
 const Profile = () => {
   const { loading, data } = useQuery(USER_PROFILE);
+  console.log(data)
 
   return (
     <div className="relative flex min-h-screen flex-col  overflow-hidden sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-1">
       <div className="max-w-sm rounded overflow-hidden  ">
         <div className="bg-white shadow-md rounded px-10 pt-12 pb-16 mb-8">
           <div className="font-bold text-xl mb-2">
-            Welcome {user.username}
+            {/* Welcome {user.username} */}
+            {data?.user.username}
           </div>
           <p className="text-gray-700 text-base">
             "Sometimes the smallest step in the right direction ends up being
@@ -26,8 +28,8 @@ const Profile = () => {
           <p>Loading...</p>
         ) : (
           <div>
-            {data &&
-              data.user.exercise.map((exercise) => (
+            {
+              data?.user.exercise.map((exercise) => (
                 <div key={exercise._id}>
                   <ExerciseCard exercise={exercise} />
                 </div>

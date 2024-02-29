@@ -43,9 +43,9 @@ module.exports = {
     return req;
   },
   // Function to sign JWT tokens
-  signToken: function ({ email, name, _id }) {
+  signToken: function ({ username, _id }) {
     // Create payload containing user data
-    const payload = { email, name, _id };
+    const payload = { username, _id };
     // Sign the payload with the secret key and set expiration time
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },

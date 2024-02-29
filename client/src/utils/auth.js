@@ -37,7 +37,7 @@ class Auth {
     const token = this.getToken();
     if (token) {
       const decoded = jwtDecode(token);
-      return decoded.username;
+      return decoded.data.username;
     }
     return null;
   }

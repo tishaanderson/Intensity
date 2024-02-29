@@ -40,7 +40,7 @@ const LogIn = () => {
             <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
               Password
             </label>
-            <input value={formData.password} onChange={(event) => setFormData({ ...formData, password: event.target.value })} class="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
+            <input value={formData.password} onChange={(event) => setFormData({ ...formData, password: event.target.value })} class="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="••••••••" />
             {error && <div className="text-red-500 text-xs italic">Incorrect username or password. Please try again.</div>} {/* Display error message if there's an error */}
           </div>
           <div class="flex items-center justify-between ">

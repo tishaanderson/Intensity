@@ -36,8 +36,8 @@ const ExerciseCard = ({ exercise }) => {
   } 
   return (
 
-
-    <div
+<div className='specificCard'>
+  <div
       className=" exerciseCard max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div className="relative overflow-hidden bg-cover bg-no-repeat">
         <img
@@ -80,6 +80,8 @@ const ExerciseCard = ({ exercise }) => {
         </label>
       </div>
     </div>
+</div>
+    
   )
 }
 

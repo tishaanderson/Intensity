@@ -132,3 +132,21 @@ export const ADD_USER_EXERCISE = gql`
       }
     }
   }`
+
+  // export const REMOVE_USER_EXERCISE = gql`
+  // mutation RemoveUserExercise($id: ID!) {
+  //   removeUserExercise(id: $id) {
+  //     _id
+  //     username
+  //     email
+  //     exercise {
+  //       _id
+  //       name
+  //       sets
+  //       reps
+  //       duration_minutes
+  //       exercise_type
+  //       image
+  //     }
+  //   }
+  // }`

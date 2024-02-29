@@ -23,9 +23,13 @@ const ExerciseCard = ({ exercise }) => {
          });
          console.log(data.addUserExercise)
       }
-      if (!e.target.checked) {
-        //run mutation that removes exercise from user
-      }
+      // if (!e.target.checked) {
+      //   //run mutation that removes exercise from user
+      //   const { data } = await removeUserExercise({ 
+      //     variables : {id: e.target.value}
+      //    });
+      //    console.log(data.removeUserExercise)
+      // }
     } catch (error) {
       console.error(error)
     }

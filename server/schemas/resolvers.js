@@ -119,7 +119,20 @@ const resolvers = {
       ).populate('exercise')
 
       return user;
-    }
+    },
+    //NEED TO SEE IF WE CAN REMOVE USER EXERCISE FROM PROFILE
+    // removeUserExercise: async (_, { id }, context) => {
+
+    //   console.log(context.user.data)
+
+    //   const user = await User.findOneAndfUpdate(
+    //     { _id: context.user._id },
+    //     { $pull: { exercise: id } },
+    //     { new: true }
+    //   ).populate('exercise')
+
+    //   return user;
+    // }
   }
 };
 

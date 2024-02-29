@@ -42,8 +42,12 @@ const typeDefs = `
     addWorkout(name: String!, exerciseIds: [ID!]!): User
     addExercise(name: String!, sets: Int!, reps: Int!, duration_minutes: Int): Exercise
     addUserExercise(id: ID!): User
+    
     login(username: String!, password: String!): Auth
   }
 `;
 
 module.exports = typeDefs;
+
+//need to see if we can add this to the type Mutation list
+//removeUserExercise(id: ID!): User

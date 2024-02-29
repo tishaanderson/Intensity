@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div>
-            <Link to='/logIn' className="nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1">Log In</Link>
+            <Link to='/logIn' className="nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1">Login</Link>
           </div>
         )}
       </div>

@@ -1,22 +1,23 @@
 const typeDefs = `
   type Workout{
-    _id: ID
+    _id: ID!
     name: String
     image: String
     exercises: [Exercise]
   }
 
   type Exercise {
-    _id: ID
+    _id: ID!
     name: String
     sets: Int
     reps: Int
     duration_minutes: Int
     exercise_type: String
+    image: String
   }
 
   type User {
-    _id: ID
+    _id: ID!
     username: String
     email: String
     password: String

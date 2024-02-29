@@ -16,6 +16,9 @@ const Navbar = () => {
         <Link to='/why-us' className="nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1">Why Us</Link>
       </div>
       <div>
+        <Link to='/profile' className="nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1">Profile</Link>
+      </div>
+      <div>
         {Auth.loggedIn() ? (
           <div>
             <button onClick={Auth.logout} className='button-override nav-link bg-orange-500 focus:bg-blue-700 text-white rounded-full p-1'>Welcome, {username}</button>

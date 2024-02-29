@@ -18,6 +18,24 @@
 
 .exerciseCard {
   width: calc(20% - 40px);
+  width: 40vh;
+}
+.specificCard > .exerciseCard{
+  width: 30vw;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+
+}
+.selectedCard{
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+   ;
+}
+.selectedCard> div{
+  margin: 1em;
+  padding: 1em;
 }
 
 .check-box {

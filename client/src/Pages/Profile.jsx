@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { USER_PROFILE } from "../utils/queries";
 import ExerciseCard from "../components/ExerciseCard";
+import "../styles/Card.css"
 
 const Profile = () => {
   const { loading, data } = useQuery(USER_PROFILE);
@@ -27,7 +28,7 @@ const Profile = () => {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <div>
+          <div className="selectedCard">
             {
               data?.user.exercise.map((exercise) => (
                 <div key={exercise._id}>

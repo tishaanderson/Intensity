@@ -14,7 +14,7 @@ const Profile = () => {
         <div className="bg-white shadow-md rounded px-10 pt-12 pb-16 mb-8">
           <div className="font-bold text-xl mb-2">
             {/* Welcome {user.username} */}
-            {data?.user.username}
+             Welcome {data?.user.username}!
           </div>
           <p className="text-gray-700 text-base">
             "Sometimes the smallest step in the right direction ends up being

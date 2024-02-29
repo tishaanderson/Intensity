@@ -32,6 +32,15 @@ class Auth {
     localStorage.removeItem('id_token');
     window.location.reload();
   }
+
+  getUsername() {
+    const token = this.getToken();
+    if (token) {
+      const decoded = jwtDecode(token);
+      return decoded.username;
+    }
+    return null;
+  }
 }
 
 export default new Auth();

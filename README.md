@@ -51,6 +51,7 @@ Once the user is ready to select, all they have to do is click the selection box
 Once the user has completed their desired workout, and want to create a new workout plan, by cchecking off the box in the bottom left hand corner of their workout the user can clear off their comleted exercises and begin a new journey! 
 
 ## Demo
+Click the logo to start your journey!
 
 [![Intensity](./client/public/images/Logo.png)](https://intensity.onrender.com/)
 
@@ -73,6 +74,7 @@ Once the user has completed their desired workout, and want to create a new work
 - Junior Developer: [Andrea Gonzalez](https://github.com/H3yJ4yy)
 - Junior Developer: [Luis Gonzalez](https://github.com/LgCodes94)
 - Junior Developer: [Tisha Anderson](https://github.com/tishaanderson)
+-  Junior Developer: [Victor Samuel](https://github.com/VictorSamuel-dev)
 
 ## License
 
@@ -89,4 +91,4 @@ If you have any addition questions feel free to reach us at either the github re
 - [Andrea](agon0015@gmail.com)
 - [Luis](l.gonzalez6@me.com)
 - [Tisha](anderson.tisha23@gmail.com)
-
+- [Victor](victorsamuel196@gmail.com)

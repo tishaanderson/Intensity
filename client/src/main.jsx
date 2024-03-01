@@ -6,14 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 import App from './App.jsx'
 
-import Home from './pages/Home'
-import Workouts from './pages/Workouts'
-import WhyUs from './pages/WhyUs'
-import LogIn from './pages/Login'
-import SignUp from './pages/SignUp'
-import Error from './pages/Error'
-import ExerciseDetail from './pages/ExerciseDetail'
-import Profile from './pages/Profile'
+import Home from './pages/Home.jsx'
+import Workouts from './pages/Workouts.jsx'
+import WhyUs from './pages/WhyUs.jsx'
+import LogIn from './pages/Login.jsx'
+import SignUp from './pages/SignUp.jsx'
+import Error from './pages/Error.jsx'
+import ExerciseDetail from './pages/ExerciseDetail.jsx'
+import Profile from './pages/Profile.jsx'
 const router = createBrowserRouter([
   {
     path: "/",

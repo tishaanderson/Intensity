@@ -1,4 +1,4 @@
-## Intensity
+# Intensity
 
 ## Table Of Contents
 - [Description](#description)
